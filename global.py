@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 # ----------------------------
 # PAGE CONFIGURATION
@@ -21,6 +22,23 @@ This calculator estimates your annual carbon footprint based on your lifestyle c
 
 *Powered by regional data and aligned with UN SDG 13: Climate Action.*
 """)
+
+# Create two columns for media
+col1, col2 = st.columns(2)
+
+# Add video to first column
+with col1:
+    if os.path.exists("video.mp4"):
+        st.video("video.mp4")
+    else:
+        st.warning("Video file not found")
+
+# Add image to second column
+with col2:
+    if os.path.exists("image.jpg"):
+        st.image("image.jpg", caption="Carbon Footprint Pledge", use_container_width=True)
+    else:
+        st.warning("Image file not found")
 
 # ----------------------------
 # EMISSION FACTORS
