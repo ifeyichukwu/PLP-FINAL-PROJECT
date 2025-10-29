@@ -33,7 +33,7 @@ with col1:
     else:
         st.warning("Video file not found")
 
-# Add image to second column
+# Add image to second column with updated parameter
 with col2:
     if os.path.exists("image.jpg"):
         st.image("image.jpg", caption="Carbon Footprint Pledge", use_column_width=True)
