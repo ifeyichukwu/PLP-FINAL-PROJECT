@@ -1,4 +1,8 @@
 streamlit>=1.25.0
+<<<<<<< HEAD
+=======
+flask==2.3.2
+>>>>>>> f9471015f8841f041b19bf5c82121e06234c50c1
 numpy>=1.21.0
 pandas==1.5.3
 scikit-learn>=1.2.0

@@ -36,7 +36,7 @@ with col1:
 # Add image to second column
 with col2:
     if os.path.exists("image.jpg"):
-        st.image("image.jpg", caption="Carbon Footprint Pledge", use_container_width=True)
+        st.image("image.jpg", caption="Carbon Footprint Pledge", use_column_width=True)
     else:
         st.warning("Image file not found")
 
