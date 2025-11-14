@@ -1,4 +1,4 @@
-# Global EcoFootprint Calculator
+# Global EcoFootprint Calculator - https://ecofootprint.streamlit.app/
 
 A Streamlit-based web application that calculates and visualizes personal carbon footprints with region-specific calculations for Global and African contexts.
 
